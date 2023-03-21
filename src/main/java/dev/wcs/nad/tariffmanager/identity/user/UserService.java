@@ -8,6 +8,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import jakarta.mail.AuthenticationFailedException;
+
+import java.util.List;
 import java.util.Optional;
 
 import static dev.wcs.nad.tariffmanager.identity.user.IdentityServiceException.Reason.*;
@@ -237,4 +239,6 @@ public class UserService {
 
         return userRepository.save(user);
     }
+
+
 }
